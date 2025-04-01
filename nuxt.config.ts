@@ -9,5 +9,6 @@ export default defineNuxtConfig({
 	css: ['./assets/css/main.css', './assets/css/colors.css'],
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },
+		baseURL: '/portfolio/',
 	},
 });
