@@ -45,7 +45,7 @@
 							See other projects
 						</NuxtLink>
 					</div>
-					<img :src="`/images/` + project.image" alt="project.image" />
+					<img :src="`/portfolio/images/` + project.image" alt="project.image" />
 				</div>
 				<slot></slot>
 			</div>
