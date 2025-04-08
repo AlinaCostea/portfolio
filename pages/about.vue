@@ -118,37 +118,6 @@
 		font-size: 1.1rem;
 		line-height: 1.6rem;
 	}
-	.social-media {
-		padding-top: 0.5rem;
-	}
-	.social-media p {
-		font-size: 0.9rem;
-		color: rgb(var(--secondary-text-color));
-		margin-bottom: 0.5rem;
-	}
-	.social-links {
-		display: flex;
-	}
-	.social-links a {
-		margin-right: 0.5rem;
-	}
-	.social-links a img {
-		width: 1.8rem;
-		height: 1.8rem;
-		object-fit: contain;
-	}
-	.social-links a img.default {
-		display: inline-flex;
-	}
-	.social-links a img.active {
-		display: none;
-	}
-	.social-links a:hover img.default {
-		display: none;
-	}
-	.social-links a:hover img.active {
-		display: inline-flex;
-	}
 	.portrait {
 		width: 40%;
 		position: relative;
@@ -176,6 +145,41 @@
 		left: 82.5%;
 		display: inline-block;
 		color: rgba(var(--white), 0.6);
+	}
+
+	@media screen and (max-width: 768px) {
+		.about-page {
+			flex-direction: column-reverse;
+		}
+		.title-shadow {
+			font-size: 4rem;
+		}
+		.info,
+		.portrait {
+			width: 100%;
+		}
+		.info {
+			padding: 6rem 1rem 2rem 1rem;
+		}
+		.portrait:before {
+			height: calc(100% + 6rem);
+			top: -2rem;
+			right: 0;
+		}
+		.portrait:after {
+			max-width: 16rem;
+			left: 22%;
+			bottom: -3rem;
+		}
+	}
+
+	@media screen and (min-width: 769px) and (max-width: 1024px) {
+		.info {
+			padding: 2rem;
+		}
+		.title-shadow {
+			min-width: 30rem;
+		}
 	}
 
 	@media screen and (max-width: 1024px) {
